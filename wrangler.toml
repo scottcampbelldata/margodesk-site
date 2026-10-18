@@ -5,12 +5,12 @@ compatibility_date = "2026-10-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "margo-waitlist"
-database_id = "REPLACE_WITH_D1_ID"
+database_id = "6747e999-f5c6-431b-bcee-1e7615ac834c"
 
-# Notification email goes through the margo-waitlist-notify Worker (Pages cannot bind send_email directly).
-[[services]]
-binding = "NOTIFY"
-service = "margo-waitlist-notify"
+# Notification email is off for now. To turn it on, deploy notify/ (margodraw repo) and add:
+# [[services]]
+# binding = "NOTIFY"
+# service = "margo-waitlist-notify"
 
 [vars]
 PRODUCT = "margodesk"
