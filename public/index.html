@@ -60,8 +60,8 @@ footer a{color:var(--muted);padding-block:10px}
 <section class="hero">
 <div class="hero-copy">
 <p class="eyebrow">Coming soon</p>
-<h1>Meetings, projects and tasks in one place.</h1>
-<p class="lede">Your calendar, projects and priorities side by side, so the working day is easy to plan.</p>
+<h1>All your projects in one place.</h1>
+<p class="lede">See your calendar, projects and priorities side by side.</p>
 <form id="join" class="join" method="post" action="/api/waitlist">
 <label for="email">Email for launch news</label>
 <div class="row"><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" maxlength="254"><button type="submit">Join the waitlist</button></div>
@@ -70,9 +70,9 @@ footer a{color:var(--muted);padding-block:10px}
 <p class="status" role="status" aria-live="polite"></p>
 </form>
 </div>
-<div class="hero-shot list"><ul><li><strong>Calendar views</strong><span>Month, week, day and agenda.</span></li><li><strong>Projects that move</strong><span>Kanban boards and prioritized task lists for each project.</span></li><li><strong>Email into work</strong><span>Paste an email and get its meetings and tasks back.</span></li></ul></div>
+<figure class="hero-shot"><picture><source srcset="/img/app.avif" type="image/avif"><img src="/img/app.webp" width="1200" height="867" alt="The MargoDesk projects board showing three fictional projects with progress bars and a priority task list" fetchpriority="high"></picture><figcaption>Real app screen, fictional example data.</figcaption></figure>
 </section>
-
+<section class="points" aria-labelledby="what"><h2 id="what">What it does</h2><dl><div><dt>Calendar views</dt><dd>Month, week, day and agenda.</dd></div><div><dt>Projects that move</dt><dd>Kanban boards and prioritized task lists for each project.</dd></div><div><dt>Email into work</dt><dd>Paste an email and get its meetings and tasks back.</dd></div></dl></section>
 </main>
 <footer><a href="https://margoengine.com/">Also from the Margo family: Margo Engine</a><a href="https://scottcampbell.io">Made by Scott Campbell</a></footer>
 <script>
