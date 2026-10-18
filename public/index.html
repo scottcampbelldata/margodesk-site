@@ -74,7 +74,7 @@ footer a{color:var(--muted);padding-block:10px}
 </section>
 <section class="points" aria-labelledby="what"><h2 id="what">What it does</h2><dl><div><dt>Calendar views</dt><dd>Month, week, day and agenda.</dd></div><div><dt>Projects that move</dt><dd>Kanban boards and prioritized task lists for each project.</dd></div><div><dt>Email into work</dt><dd>Paste an email and get its meetings and tasks back.</dd></div></dl></section>
 </main>
-<footer><a href="https://margoengine.com/">Also from the Margo family: Margo Engine</a><a href="https://scottcampbell.io">Made by Scott Campbell</a></footer>
+<footer><a href="https://margoengine.com/">Also from the Margo family: Margo Engine</a><a href="https://scottcampbell.io">Made by Scott Campbell</a><a href="/privacy">Privacy</a></footer>
 <script>
 document.getElementById('join').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,st=f.querySelector('.status'),b=f.querySelector('button');b.disabled=true;st.textContent='Sending...';
 try{const r=await fetch(f.action,{method:'POST',body:new FormData(f)});const j=await r.json();st.textContent=j.message;if(r.ok)f.querySelector('.row').hidden=true;}catch{st.textContent='That did not go through. Please try again.';}b.disabled=false;});
